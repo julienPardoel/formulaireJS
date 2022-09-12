@@ -4,11 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FormulaireJS</title>
     <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/f34d87f260.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>FormulaireJS</h1>
+    <div class="container">
+      <div class="header">
+        <h2>Créer un compte</h2>
+      </div>
+
+      <form class="form">
+        <div class="form-control">
+          <label for="">Pseudo</label>
+          <input type="text" id="username" placeholder="entrez un pseudo" />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-solid fa-exclamation"></i>
+          <small>Message d'erreur</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Email</label>
+          <input type="email" id="email" placeholder="entrez votre email" />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-solid fa-exclamation"></i>
+          <small>Message d'erreur</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="entrez un password"
+          />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-solid fa-exclamation"></i>
+          <small>Message d'erreur</small>
+        </div>
+
+        <div class="form-control">
+          <label for="">Confirmez votre password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="confirmez votre password"
+          />
+          <i class="fa-regular fa-circle-check"></i>
+          <i class="fa-solid fa-exclamation"></i>
+          <small>Message d'erreur</small>
+        </div>
+
+        <button type="submit">
+          <i class="fa-solid fa-user-plus"></i> S'inscrire
+        </button>
+      </form>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
